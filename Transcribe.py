@@ -14,7 +14,7 @@ def transcribe_gcs(gcs_uri):
     config = types.RecognitionConfig(
         encoding=enums.RecognitionConfig.AudioEncoding.FLAC,
         sample_rate_hertz=16000,
-        language_code='te-IN')
+        language_code='en-IN')
 
     operation = client.long_running_recognize(config, audio)
 
@@ -25,7 +25,7 @@ def transcribe_gcs(gcs_uri):
     # them to get the transcripts for the entire audio file.
     for result in response.results:
         # The first alternative is the most likely one for this portion.
-        sys.stdout = open("Documents/Intern/telugu.txt", "a")
+        sys.stdout = open("Documents/Intern/out.txt", "a")
         print(u'Transcript: {}'.format(result.alternatives[0].transcript))
     print("Transcript Done.")
 # [END def_transcribe_gcs]
