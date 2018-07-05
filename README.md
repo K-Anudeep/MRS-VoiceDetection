@@ -8,3 +8,6 @@ This process uses Google's Cloud Speech API. Local file transcriptions are limit
 Upload the files of supported audio formats/encoding to GCS and run the file location through the script for the result.
 
 Supported audio files: 16bit, 16khz, mono FLAC files are the choosen format as they take low space compared to WAV files. All the audio conversions are currently done through Audacity.
+
+
+WORK IN PROGRESS
