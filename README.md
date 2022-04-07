@@ -1,4 +1,4 @@
-# InternProject2018
+# Movie Recommendation System using voice detection.
 June 2018 Intern Project on Audio file transcription
 
 Transcribing audio files into text and creating a dataset off of it to ultimately use it for a Movie Recommending System or in short MRS™.
